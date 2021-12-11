@@ -1,6 +1,12 @@
 :root {
   --main-bg-color: #242424;
   --text-color: #fff;
+  --dark-text-color: #242424;
+  --main-gray-color: #333533;
+  --lighter-gray-color: #505250;
+  --darker-gray-color: #1c1c1c;
+  --main-yellow-color: #f5cb5c;
+  --darker-yellow-color: #d1aa40;
 }
 
 html {
@@ -43,4 +49,19 @@ ul {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.main-button {
+  background-color: var(--main-yellow-color);
+  color: var(--dark-text-color);
+  border: none;
+  border-radius: 8px;
+  padding: 4px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: ease-in-out 0.2s all;
+}
+
+.main-button:hover {
+  background-color: var(--darker-yellow-color);
 }
