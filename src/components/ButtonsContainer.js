@@ -16,16 +16,16 @@ const ButtonsList = styled.ul`
 const ButtonsContainer = () => {
   return (
     <ButtonsList>
-      <LoginWithButton>
+      <LoginWithButton social="Facebook">
         <FacebookCircle />
       </LoginWithButton>
-      <LoginWithButton>
+      <LoginWithButton social="Github">
         <Github />
       </LoginWithButton>
-      <LoginWithButton>
+      <LoginWithButton social="Google">
         <Google />
       </LoginWithButton>
-      <LoginWithButton>
+      <LoginWithButton social="Twitter">
         <Twitter />
       </LoginWithButton>
     </ButtonsList>

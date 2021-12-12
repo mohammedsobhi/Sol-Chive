@@ -16,10 +16,11 @@ const Button = styled.button`
   }
 `;
 
-const LoginWithButton = ({ children }) => {
+const LoginWithButton = ({ children, social }) => {
   return (
     <li>
-      <Button>{children}</Button>
+      <Button ariaLabel="Login with social media">{children}</Button>
+      <span className="visually-hidden">Login with {social}</span>
     </li>
   );
 };
