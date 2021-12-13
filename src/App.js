@@ -1,11 +1,17 @@
 import LandingPage from "./pages/LandingPage";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import SearchResults from "./pages/SearchResults";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <LandingPage />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<LandingPage />}></Route>
+          <Route path="/search" element={<SearchResults />}></Route>
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
