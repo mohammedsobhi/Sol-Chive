@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 const Title = styled.h1`
-  font-size: 30px;
+  font-size: ${({ size }) => (size ? size : "30px")};
+  font-weight: ${({ weight }) => (weight ? weight : "regular")};
 `;
 
 const Yellow = styled.span`
@@ -9,9 +10,9 @@ const Yellow = styled.span`
   color: var(--main-yellow-color);
 `;
 
-const Logo = () => {
+const Logo = ({ size, weight }) => {
   return (
-    <Title>
+    <Title size={size} weight={weight}>
       <Yellow>Sol</Yellow>-chive
     </Title>
   );
