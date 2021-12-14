@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const SearchContainer = styled.div`
@@ -34,9 +35,11 @@ const LandingSearch = () => {
           placeholder="Enter email"
           required
         />
-        <button type="submit" className="main-button">
-          Find now
-        </button>
+        <Link to={"/search"}>
+          <button type="submit" className="main-button">
+            Find now
+          </button>
+        </Link>
       </SearchForm>
     </SearchContainer>
   );
