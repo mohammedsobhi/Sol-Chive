@@ -1,8 +1,17 @@
 import { useState } from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
 import Logo from "./Logo";
 import { Search } from "@styled-icons/boxicons-regular/Search";
+
+const appendAnimate = keyframes`
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+`;
 
 const Header = styled.header`
   background-color: var(--main-gray-color);
@@ -62,6 +71,7 @@ const ToggledSearchForm = styled.form`
   justify-content: center;
   margin-bottom: 10px;
   padding: 10px 20px;
+  animation: ${appendAnimate} 0.3s;
   @media (min-width: 480px) {
     display: none;
   }
@@ -133,7 +143,6 @@ const SearchHeader = () => {
           </ToggledSearchButton>
         </ToggledSearchForm>
       )}
-      <h1>dasd</h1>
     </>
   );
 };
