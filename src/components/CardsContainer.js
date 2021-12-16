@@ -3,6 +3,7 @@ import SolutionCard from "./SolutionCard";
 
 const Container = styled.section`
   width: 100%;
+  margin-bottom: 20px;
 `;
 
 const ContainerHeader = styled.div`
@@ -45,7 +46,7 @@ const Select = styled.select`
 
 const CardsBody = styled.ul`
   display: flex;
-  justify-content: center;
+  width: 100%;
   flex-wrap: wrap;
   gap: 12px;
 `;
