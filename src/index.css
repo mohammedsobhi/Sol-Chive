@@ -7,6 +7,8 @@
   --darker-gray-color: #1c1c1c;
   --main-yellow-color: #f5cb5c;
   --darker-yellow-color: #d1aa40;
+  --error-color: #ff7a7a;
+  --error-bg-color: #ff7a7a17;
 }
 
 html {

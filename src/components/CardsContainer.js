@@ -4,6 +4,7 @@ import SolutionCard from "./SolutionCard";
 const Container = styled.section`
   width: 100%;
   margin-bottom: 20px;
+  min-height: calc(100vh - 130px);
 `;
 
 const ContainerHeader = styled.div`
