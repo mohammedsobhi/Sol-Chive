@@ -2,19 +2,13 @@ import styled from "styled-components";
 import ButtonsContainer from "../components/ButtonsContainer";
 import Footer from "../components/Footer";
 import LandingSearch from "../components/LandingSearch";
-import Logo from "../components/Logo";
 import OrSeparator from "../components/OrSeparator";
+import LogoHeader from "../components/LogoHeader";
 
 const MainContainer = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-`;
-
-const LogoHeader = styled.header`
-  height: 60px;
-  display: flex;
   align-items: center;
 `;
 
@@ -38,9 +32,7 @@ const LandingPage = () => {
   return (
     <>
       <MainContainer>
-        <LogoHeader>
-          <Logo />
-        </LogoHeader>
+        <LogoHeader />
         <MainSection>
           <Heading>Welcome</Heading>
           <SubHeading>Login or join us via</SubHeading>
