@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { LinkExternal } from "@styled-icons/boxicons-regular/LinkExternal";
+import { Link } from "react-router-dom";
+
 const Card = styled.li`
   display: flex;
   flex-direction: column;
@@ -91,7 +93,9 @@ const SolutionCard = ({ data }) => {
         </Tags>
         <Text>solved {data.date}</Text>
       </CardBody>
-      <Button className="btn">View</Button>
+      <Link to={"/"}>
+        <Button className="btn">View</Button>
+      </Link>
     </Card>
   );
 };
