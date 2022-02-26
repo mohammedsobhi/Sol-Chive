@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import LandingSearch from "./LandingSearch";
-import OrSeparator from "./OrSeparator";
+import LandingSearch from "../landingPage/LandingSearch";
+import OrSeparator from "../landingPage/OrSeparator";
 
 const NoResultContainer = styled.section`
   display: flex;

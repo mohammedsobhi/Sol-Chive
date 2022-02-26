@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import GlobalStyle from "./globalStyles";
-import LandingPage from "./pages/LandingPage";
-import SearchResults from "./pages/SearchResults";
-import NotFound from "./pages/NotFound";
-import Footer from "./components/Footer";
+import LandingPage from "./pages/LandingPage/LandingPage";
+import SearchResults from "./pages/SearchResults/SearchResults";
+import NotFound from "./pages/NotFound/NotFound";
+import Footer from "./components/layout/Footer";
 
 function App() {
   return (

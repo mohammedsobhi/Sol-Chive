@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
-import Logo from "./Logo";
+import Logo from "../layout/Logo";
 import { Search } from "@styled-icons/boxicons-regular/Search";
 
 const appendAnimate = keyframes`

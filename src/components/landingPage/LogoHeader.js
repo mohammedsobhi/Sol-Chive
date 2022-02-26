@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Logo from "./Logo";
+import Logo from "../layout/Logo";
 
 const Header = styled.header`
   height: 60px;
