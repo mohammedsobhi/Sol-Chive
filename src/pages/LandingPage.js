@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import ButtonsContainer from "../components/ButtonsContainer";
-import Footer from "../components/Footer";
 import LandingSearch from "../components/LandingSearch";
 import OrSeparator from "../components/OrSeparator";
 import LogoHeader from "../components/LogoHeader";
@@ -41,7 +40,6 @@ const LandingPage = () => {
           <LandingSearch />
         </MainSection>
       </MainContainer>
-      <Footer />
     </>
   );
 };

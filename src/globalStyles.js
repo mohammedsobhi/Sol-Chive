@@ -1,4 +1,7 @@
-:root {
+import { createGlobalStyle } from "styled-components";
+
+const GlobalStyle = createGlobalStyle`
+  :root {
   --main-bg-color: #242424;
   --text-color: #fff;
   --dark-text-color: #242424;
@@ -90,3 +93,7 @@ img {
   white-space: nowrap;
   width: 1px;
 }
+
+`;
+
+export default GlobalStyle;

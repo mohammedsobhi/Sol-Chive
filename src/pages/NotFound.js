@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Footer from "../components/Footer";
 import LogoHeader from "../components/LogoHeader";
 
 const PageContainer = styled.div`
@@ -56,7 +55,6 @@ const NotFound = () => {
           <Message>Page Not Found</Message>
         </ErrorCode>
       </PageContainer>
-      <Footer />
     </>
   );
 };
